@@ -1,7 +1,7 @@
 const BottomLine = () => {
   return (
     <img
-      className="absolute bottom-0 z-[-1]"
+      className="absolute bottom-0 z-[-1] w-screen "
       src="/images/events/bottom.png"
       alt="top"
     />
