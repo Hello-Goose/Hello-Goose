@@ -1,18 +1,16 @@
-import Flower from "./Flower";
+import GenerateFlower from "./GenerateFlower";
 
 const EventsMobile = () => {
   const flowers = [
-    { postion: "left-0 top-[-5%] w-[12%]", colorFlower: "pink" },
-    { postion: "right-[5%] top-[5%] w-[10%]", colorFlower: "orange" },
-    { postion: "bottom-[32%] right-[11%] w-[11%]", colorFlower: "pink" },
-    { postion: "bottom-[4%] left-[6%] w-[15%]", colorFlower: "purple" },
+    { position: "left-0 top-[-5%] w-[12%]", colorFlower: "pink" },
+    { position: "right-[5%] top-[5%] w-[10%]", colorFlower: "orange" },
+    { position: "bottom-[32%] right-[11%] w-[11%]", colorFlower: "pink" },
+    { position: "bottom-[4%] left-[6%] w-[15%]", colorFlower: "purple" },
   ];
   return (
     <div className="relative flex-center h-max md:hidden">
       <img className="w-[92%]" src="/images/events/eventMobile.png" alt="" />
-      {flowers.map(({ postion, colorFlower }, index) => (
-        <Flower className={postion} colorFlower={colorFlower} key={index} delay={index}/>
-      ))}
+      <GenerateFlower flowers={flowers}/>
     </div>
   );
 };

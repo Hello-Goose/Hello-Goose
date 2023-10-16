@@ -1,8 +1,8 @@
 const AboutText = function () {
   return (
-    <div className="TabletV:justify-center flex w-[85%] flex-row items-center justify-center md:justify-start   ">
-      <div className="TabletV:pb-[190px] TabletV:h-full  flex h-5/6  w-full flex-row  items-center justify-center rounded-[30px] bg-white px-5 pb-0 opacity-75   md:h-5/6 md:w-5/6   md:py-10">
-        <p className="TabletV:mb-20 mb-0   p-4 text-center font-itim text-[12px] leading-[29px] mobileL:leading-[29px] md:p-0 md:pb-0  md:text-[18px]">
+    <div className="flex w-[85%] flex-row items-center justify-center md:justify-start TabletV:justify-center   ">
+      <div className="flex h-5/6  w-full flex-row  items-center justify-center  rounded-[30px] bg-white px-5 pb-0 opacity-75  md:w-5/6   md:py-10 TabletV:h-full   TabletV:pb-[190px]">
+        <p className="mb-0 p-4   text-center font-itim text-[12px] leading-[29px] md:p-1 md:text-[16px]  lg:text-[18px] mobileL:leading-[29px]   TabletV:mb-20">
           ยินดีต้อนรับน้องห่านทุกคน เข้าสู่โครงการ SIT HelloWorld-Goose
           ที่จะพาน้อง ๆ มาเรียนรู้วิธีการสร้าง การออกแบบ และพัฒนา
           ของทั้งเว็บไซต์และเกม ตั้งแต่ศูนย์ ไปจนถึงทำได้จริง
