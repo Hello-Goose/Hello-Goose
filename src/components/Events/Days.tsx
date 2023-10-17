@@ -25,13 +25,13 @@ const Days: React.FC<DaysProps> = ({
   };
   return (
     <motion.img
-      className={twMerge("absolute z-10 w-[45%]", className)}
+      className={twMerge("absolute w-[45%] cursor-pointer", className)}
       src={`/images/events/${day}.png`}
       alt={`${day}`}
       variants={dayAnimation}
       initial="day"
       animate="day"
-      whileHover="hover"
+      whileHover={{ rotate: 5 }}
     />
   );
 };

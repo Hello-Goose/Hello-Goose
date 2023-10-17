@@ -18,7 +18,7 @@ const GameButton = () => {
       },
     },
     hover: {
-      scale: 1.1,
+      scale: 1.05,
     },
     tap: {
       rotate: 2,

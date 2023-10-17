@@ -86,7 +86,7 @@ function App() {
   }, [setPage]);
 
   return (
-    <div className="flex flex-col items-center min-h-screen overflow-hidden">
+    <div className="flex flex-col items-center min-h-screen">
       <NavBar isLogoVisible={isLogoVisible} navTo={navTo} />
       <HeroBanner ref={heroRef} />
       <About ref={aboutRef} />
