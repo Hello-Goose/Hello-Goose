@@ -1,5 +1,5 @@
-import Days from "./Days";
-import GenerateFlower from "./GenerateFlower";
+import GenerateDay from "./componentsAbout/GenerateDay";
+import GenerateFlower from "./componentsAbout/GenerateFlower";
 
 const EventsDesktop = () => {
   const flowers = [
@@ -9,18 +9,20 @@ const EventsDesktop = () => {
     { position: "bottom-[33%] left-[-32%] w-[17%]", colorFlower: "purple" },
   ];
   const days = [
-    { position: "bottom-[2%] right-[-12%]", day: "Graduation", delay: 1 },
-    { position: "bottom-[45%] right-[-15%] ", day: "gooseDay", delay: 3 },
-    { position: "left-[5%] top-[5%]", day: "registerDay", delay: 5 },
-    { position: "bottom-[8%] left-[-5%]", day: "finalDay", delay: 4 },
+    { position: "bottom-[2%] right-[-12%]", day: "Graduation" },
+    { position: "bottom-[45%] right-[-15%] ", day: "gooseDay" },
+    { position: "left-[5%] top-[5%]", day: "registerDay" },
+    { position: "bottom-[8%] left-[-5%]", day: "finalDay" },
   ];
   return (
     <div className="relative my-auto hidden scale-[80%] items-center justify-center md:block lg:top-[-20px] TabletV:hidden">
-      <img className="mx-auto " src="/images/events/platform.png" alt="" />
+      <img
+        className="mx-auto "
+        src="/images/events/platform.png"
+        alt="platform"
+      />
       <GenerateFlower flowers={flowers} />
-      {days.map(({ position, day, delay }) => (
-        <Days day={`${day}`} className={`${position}`} delay={delay} />
-      ))}
+      <GenerateDay days={days} />
     </div>
   );
 };

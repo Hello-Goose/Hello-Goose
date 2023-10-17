@@ -1,4 +1,4 @@
-import GenerateFlower from "./GenerateFlower";
+import GenerateFlower from "./componentsAbout/GenerateFlower";
 
 const EventsMobile = () => {
   const flowers = [
@@ -8,9 +8,9 @@ const EventsMobile = () => {
     { position: "bottom-[4%] left-[6%] w-[15%]", colorFlower: "purple" },
   ];
   return (
-    <div className="relative flex-center h-max md:hidden">
+    <div className="flex-center relative h-max md:hidden">
       <img className="w-[92%]" src="/images/events/eventMobile.png" alt="" />
-      <GenerateFlower flowers={flowers}/>
+      <GenerateFlower flowers={flowers} />
     </div>
   );
 };

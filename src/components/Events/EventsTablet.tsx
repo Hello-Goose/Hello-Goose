@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import GenerateFlower from "./GenerateFlower";
+import GenerateFlower from "./componentsAbout/GenerateFlower";
 
 const EventsTablet = () => {
   const eventRef = useRef<HTMLDivElement>(null);
