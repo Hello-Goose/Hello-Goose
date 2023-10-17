@@ -19,15 +19,19 @@ const Days: React.FC<DaysProps> = ({
       scale: [1, 1.05, 1],
       transition: { duration: duration, repeat: Infinity, delay: delay },
     },
+    hover: {
+      scale: 1.1,
+    },
   };
   return (
     <motion.img
-      className={twMerge("absolute w-[45%]", className)}
+      className={twMerge("absolute z-10 w-[45%]", className)}
       src={`/images/events/${day}.png`}
       alt={`${day}`}
       variants={dayAnimation}
       initial="day"
       animate="day"
+      whileHover="hover"
     />
   );
 };
