@@ -8,9 +8,9 @@ const EventsDesktop = () => {
     { position: "bottom-[33%] left-[-5%] w-[12%]", colorFlower: "purple" },
   ];
   return (
-    <div className="relative hidden h-max items-center justify-center md:block TabletV:hidden">
+    <div className="relative my-auto hidden h-max items-center justify-center md:block lg:top-[-20px] TabletV:hidden">
       <img
-        className="mx-auto w-[87%] xl:w-[60%]"
+        className="mx-auto w-[87%]  xl:w-[60%]"
         src="/images/events/eventDesktop.png"
         alt=""
       />
