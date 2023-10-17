@@ -10,7 +10,7 @@ const Events = forwardRef<HTMLDivElement>((props, ref) => {
     <div
       ref={ref}
       {...props}
-      className="flex-center justify-cneter relative z-[-5] flex min-h-screen  flex-col justify-center overflow-hidden bg-background-event
+      className="flex-center justify-cneter relative z-[-5] flex min-h-screen  w-full flex-col justify-center overflow-hidden bg-background-event
        bg-cover bg-bottom   bg-no-repeat 
         md:pb-0 "
     >
