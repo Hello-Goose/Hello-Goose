@@ -1,4 +1,4 @@
-export const desktop = {
+const desktop = {
   flowers: [
     { position: "left-[-10%] top-[16%] w-[15%]", colorFlower: "pink" },
     { position: "right-[-20%] top-[5%] w-[14%]", colorFlower: "orange" },
@@ -12,7 +12,7 @@ export const desktop = {
     { position: "bottom-[8%] left-[-5%]", day: "announceDay" },
   ],
 };
-export const mobile = {
+const mobile = {
   flowers: [
     { position: "left-[-16%] top-[-14%] w-[17%]", colorFlower: "pink" },
     { position: "right-[-10%] top-[0%] w-[15%]", colorFlower: "orange" },
@@ -26,7 +26,7 @@ export const mobile = {
     { position: "top-[15%] right-[0%] w-[55%]", day: "announceDayM" },
   ],
 };
-export const tablet = {
+const tablet = {
   flowers: [
     { position: "left-[-17%] top-[32%] w-[19%]", colorFlower: "pink" },
     { position: "right-[-10%] top-[25%] w-[18%]", colorFlower: "orange" },
@@ -40,3 +40,5 @@ export const tablet = {
     { position: "top-[27%] right-[10%] w-[50%]", day: "announceDay" },
   ],
 };
+
+export { tablet, desktop, mobile };
