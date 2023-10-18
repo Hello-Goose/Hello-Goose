@@ -13,7 +13,7 @@ const GenerateDay = ({ days }: Days) => {
   return (
     <>
       {days.map(({ position, day }, index) => (
-        <Days className={position} day={day} key={index} />
+        <Days className={position} day={day} key={index} delay={index} />
       ))}
     </>
   );

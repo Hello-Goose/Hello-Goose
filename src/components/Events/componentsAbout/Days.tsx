@@ -3,7 +3,7 @@ import React from "react";
 import { twMerge } from "tailwind-merge";
 const DEF_DURATION = 3;
 const DEF_DELAY = 0;
-const PER_DELAY = 0.3;
+const PER_DELAY = 0.5;
 type DaysProps = {
   day: string;
   duration?: number;
@@ -33,7 +33,7 @@ const Days: React.FC<DaysProps> = ({
   return (
     <motion.img
       className={twMerge("absolute w-[45%] cursor-pointer", className)}
-      src={`/images/events/${day}.png`}
+      src={`/images/events/day/${day}.png`}
       alt={`${day}`}
       variants={dayAnimation}
       initial="day"

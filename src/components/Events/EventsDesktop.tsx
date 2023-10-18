@@ -1,4 +1,4 @@
-import GenerateDay from "./componentsAbout/GenerateDay";
+import GenerateDay from "./componentsAbout//GenerateDay";
 import GenerateFlower from "./componentsAbout/GenerateFlower";
 
 const EventsDesktop = () => {
@@ -9,13 +9,13 @@ const EventsDesktop = () => {
     { position: "bottom-[33%] left-[-32%] w-[17%]", colorFlower: "purple" },
   ];
   const days = [
-    { position: "bottom-[2%] right-[-12%]", day: "Graduation" },
+    { position: "bottom-[2%] right-[-12%]", day: "graduation" },
     { position: "bottom-[45%] right-[-15%] ", day: "gooseDay" },
     { position: "left-[5%] top-[5%]", day: "registerDay" },
     { position: "bottom-[8%] left-[-5%]", day: "finalDay" },
   ];
   return (
-    <div className="relative my-auto hidden scale-[80%] items-center justify-center md:block lg:top-[-20px] TabletV:hidden">
+    <div className="relative  my-auto  hidden scale-[65%] items-center justify-center md:block lg:top-[-20px] TabletV:hidden">
       <img
         className="mx-auto "
         src="/images/events/platform.png"
