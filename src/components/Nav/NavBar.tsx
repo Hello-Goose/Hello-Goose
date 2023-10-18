@@ -14,7 +14,7 @@ const NavBar = ({ isLogoVisible = false, navTo, ...props }: NavbarProps) => {
       className={twMerge(
         props.className,
         isLogoVisible ? "py-12" : "py-0",
-        "fixed left-0 top-0 z-50 flex h-20 w-full items-center justify-between px-8 sm:h-12 md:h-16",
+        "fixed left-0 top-0 z-[999] flex h-20 w-full items-center justify-between px-8 sm:h-12 md:h-16",
         "px-[2rem] transition-all duration-300 ease-in-out",
       )}
       {...props}
