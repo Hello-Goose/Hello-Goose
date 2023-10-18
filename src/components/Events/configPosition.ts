@@ -1,4 +1,17 @@
-const desktop = {
+type itemsProperty = {
+  flowers: flowerProperty[];
+  days: dayProperty[];
+};
+type flowerProperty = {
+  position: string;
+  colorFlower: string;
+};
+type dayProperty = {
+  position: string;
+  day: string;
+};
+
+const desktop: itemsProperty = {
   flowers: [
     { position: "left-[-10%] top-[16%] w-[15%]", colorFlower: "pink" },
     { position: "right-[-20%] top-[5%] w-[14%]", colorFlower: "orange" },
