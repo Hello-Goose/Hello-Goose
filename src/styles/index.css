@@ -36,3 +36,28 @@ body {
 .flex-start {
   @apply flex items-center justify-start;
 }
+
+/* หน้า team
+width กรอบขาวเล็กกว่านี้
+(min-width: 425px) แก้ชื่อทีม h3(text ตรงที่เป็นกรอบกดได้)เป็นขนาด 14px
+(min-width: 1024px) ขอแก้ชื่อทีม h3(text ตรงที่เป็นกรอบกดได้)เป็นขนาด 24px
+(min-width: 1280px) ขอแก้ชื่อทีม h3(text ตรงที่เป็นกรอบกดได้)เป็นขนาด 32px
+at default(ถ้าไม่ผิดคือ 1440px) : img ด้านขวาเวลาที่เลือกทีมมาแล้วอยากให้ใหญ่กว่านี้สักนิดครับ ปัจจุบันเหมือนจะ 33.3% อยากลอง 50% แล้วเลื่อนขวาให้ไม่ทับกรอบครับ, h1 ในสเกลนี้ใช้ 64px ครับ */
+
+@media (min-width: 425px) {
+  .team-text {
+    font-size: 14px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .team-text {
+    font-size: 24px !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .team-text {
+    font-size: 32px !important;
+  }
+}
