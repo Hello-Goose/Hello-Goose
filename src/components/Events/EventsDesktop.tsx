@@ -1,5 +1,5 @@
-import GenerateDay from "./componentsAbout//GenerateDay";
-import GenerateFlower from "./componentsAbout/GenerateFlower";
+import GenerateDay from "./componentsEvent/GenerateDay";
+import GenerateFlower from "./componentsEvent/GenerateFlower";
 
 const EventsDesktop = () => {
   const flowers = [
@@ -18,7 +18,7 @@ const EventsDesktop = () => {
     <div className="relative  my-auto  hidden scale-[65%] items-center justify-center md:block lg:top-[-20px] TabletV:hidden">
       <img
         className="mx-auto "
-        src="/images/events/platform.png"
+        src="/images/events/platformDesktop.png"
         alt="platform"
       />
       <GenerateFlower flowers={flowers} />

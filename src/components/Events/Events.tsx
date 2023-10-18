@@ -2,8 +2,8 @@ import { forwardRef } from "react";
 import EventsMobile from "./EventsMobile";
 import EventsDesktop from "./EventsDesktop";
 import EventsTablet from "./EventsTablet";
-import TopLine from "./componentsAbout/TopLine";
-import BottomLine from "./componentsAbout/BottomLine";
+import TopLine from "./componentsEvent/TopLine";
+import BottomLine from "./componentsEvent/BottomLine";
 
 const Events = forwardRef<HTMLDivElement>((props, ref) => {
   return (

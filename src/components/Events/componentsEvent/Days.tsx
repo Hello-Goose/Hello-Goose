@@ -8,6 +8,7 @@ type DaysProps = {
   day: string;
   duration?: number;
   delay?: number;
+  fixScale?: string;
 } & HTMLMotionProps<"img">;
 
 const Days: React.FC<DaysProps> = ({
