@@ -68,7 +68,7 @@ const FaqBox = () => {
         <div
           key={faq.id}
           className="mb-3 rounded-[25px] bg-white p-3 font-itim 
-        text-[1rem] text-black lg:py-5 lg:text-[1.5rem]"
+        text-[1rem] text-black lg:py-4 lg:text-[1.3rem]"
         >
           <div
             className="flex items-center justify-between"
