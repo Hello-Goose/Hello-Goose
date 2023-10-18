@@ -7,6 +7,7 @@ import NavItemUnderline from "./NavItemUnderline";
 
 type NavItemsProps = {
   navTo: (path: string) => void;
+  isLogoVisible?: boolean;
 };
 
 const navLinks: NavLinks[] = [
@@ -32,7 +33,7 @@ const navLinks: NavLinks[] = [
   },
 ];
 
-const NavItems = ({ navTo }: NavItemsProps) => {
+const NavItems = ({ navTo, isLogoVisible }: NavItemsProps) => {
   const { page } = usePageStore();
 
   const fadeIn = {
@@ -52,7 +53,7 @@ const NavItems = ({ navTo }: NavItemsProps) => {
         {navLinks.map((navLink) => (
           <li
             key={navLink.name}
-            className="relative text-white uppercase font-cherry text-paragraph-header"
+            className={`relative ${isLogoVisible ? "text-white" : "text-secondary-800"} uppercase font-cherry text-paragraph-header transition-colors duration-300`}
           >
             <div className="cursor-pointer" onClick={() => navTo(navLink.path)}>
               {navLink.name}

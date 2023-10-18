@@ -65,18 +65,24 @@ const FaqBox = () => {
   return (
     <>
       {faqs.map((faq) => (
-        <div key={faq.id} className="mb-3 lg:text-[1.5rem] text-[1rem] text-black bg-white rounded-lg font-itim p-3 lg:py-5">
+        <div
+          key={faq.id}
+          className="mb-3 rounded-[25px] bg-white p-3 font-itim 
+        text-[1rem] text-black lg:py-4 lg:text-[1.3rem]"
+        >
           <div
             className="flex items-center justify-between"
             onClick={() => toggleSign(faq.id)}
           >
             <h2 className="flex-1 text-center">{faq.question}</h2>
-            <span className="cursor-pointer">{active === faq.id ? "-" : "+"}</span>
+            <span className="cursor-pointer">
+              {active === faq.id ? "-" : "+"}
+            </span>
           </div>
 
           {faq.id === active && (
             <motion.div
-              className="p-2 m-2 border-t-2"
+              className="m-2 border-t-2 p-2"
               variants={faqVariants}
               initial="hidden"
               animate="visible"

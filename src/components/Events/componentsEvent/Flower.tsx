@@ -29,7 +29,7 @@ const Flower: React.FC<FlowerProps> = ({
   return (
     <motion.img
       className={twMerge(`absolute z-[-1]`, className)}
-      src={`/images/events/${colorFlower}.PNG`}
+      src={`/images/events/flower/${colorFlower}.PNG`}
       alt={`${colorFlower}`}
       variants={flowerVariants}
       initial="initial"

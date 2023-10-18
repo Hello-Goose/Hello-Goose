@@ -1,32 +1,22 @@
 import { useRef } from "react";
-import Flower from "./Flower";
-
+import GenerateFlower from "./componentsEvent/GenerateFlower";
+import GenerateDay from "./componentsEvent/GenerateDay";
+import {tablet} from "./configPosition"
 const EventsTablet = () => {
   const eventRef = useRef<HTMLDivElement>(null);
-  const flowers = [
-    { postion: "left-[-2%] top-[32%] w-[14%]", colorFlower: "pink" },
-    { postion: "right-[1%] top-[25%] w-[13%]", colorFlower: "orange" },
-    { postion: "bottom-[23%] right-[-5%] w-[16%]", colorFlower: "pink" },
-    { postion: "bottom-[28%] left-[-13%] w-[18%]", colorFlower: "purple" },
-  ];
+  const {flowers,days} = tablet
   return (
     <div
       ref={eventRef}
-      className="relative flex w-[90%]   md:hidden  mobileS:hidden TabletV:block"
+      className="relative flex  scale-[70%]   md:hidden  mobileS:hidden TabletV:block"
     >
       <img
         className="z-1 "
-        src="/images/events/eventTablet.png"
-        alt="eventTablet"
+        src="/images/events/platformTablet.png"
+        alt="platformTablet"
       />
-      {flowers.map(({ postion, colorFlower }, index) => (
-        <Flower
-          className={postion}
-          colorFlower={colorFlower}
-          key={index}
-          delay={index}
-        />
-      ))}
+      <GenerateFlower flowers={flowers} />
+      <GenerateDay days={days} />
     </div>
   );
 };

@@ -23,7 +23,7 @@ const NavBar = ({ isLogoVisible = false, navTo, ...props }: NavbarProps) => {
         <NavBrand isLogoVisible={isLogoVisible} />
       </div>
 
-      <NavItems navTo={navTo} />
+      <NavItems navTo={navTo} isLogoVisible={isLogoVisible}/>
     </nav>
   );
 };

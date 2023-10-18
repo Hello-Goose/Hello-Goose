@@ -1,18 +1,17 @@
-import Flower from "./Flower";
-
+import GenerateFlower from "./componentsEvent/GenerateFlower";
+import GenerateDay from "./componentsEvent/GenerateDay";
+import {mobile} from "./configPosition"
 const EventsMobile = () => {
-  const flowers = [
-    { postion: "left-0 top-[-5%] w-[12%]", colorFlower: "pink" },
-    { postion: "right-[5%] top-[5%] w-[10%]", colorFlower: "orange" },
-    { postion: "bottom-[32%] right-[11%] w-[11%]", colorFlower: "pink" },
-    { postion: "bottom-[4%] left-[6%] w-[15%]", colorFlower: "purple" },
-  ];
+  const {flowers,days} = mobile;
   return (
-    <div className="relative flex-center h-max md:hidden">
-      <img className="w-[92%]" src="/images/events/eventMobile.png" alt="" />
-      {flowers.map(({ postion, colorFlower }, index) => (
-        <Flower className={postion} colorFlower={colorFlower} key={index} delay={index}/>
-      ))}
+    <div className="flex-center relative h-max scale-[75%] md:hidden">
+      <img
+        className="mx-auto "
+        src="/images/events/platformMobile.png"
+        alt="platformMobile"
+      />
+      <GenerateFlower flowers={flowers} />
+      <GenerateDay days={days} />
     </div>
   );
 };

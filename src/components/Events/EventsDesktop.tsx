@@ -1,22 +1,17 @@
-import Flower from "./Flower";
-
+import GenerateDay from "./componentsEvent/GenerateDay";
+import GenerateFlower from "./componentsEvent/GenerateFlower";
+import { desktop } from "./configPosition";
 const EventsDesktop = () => {
-  const flowers = [
-    { postion: "left-[7%] top-[16%] w-[10%]", colorFlower: "pink" },
-    { postion: "right-[1%] top-[5%] w-[9%]", colorFlower: "orange" },
-    { postion: "bottom-[32%] right-[2%] w-[12%]", colorFlower: "pink" },
-    { postion: "bottom-[33%] left-[-5%] w-[12%]", colorFlower: "purple" },
-  ];
+  const { flowers, days } = desktop;
   return (
-    <div className="relative items-center justify-center hidden TabletV:hidden h-max md:block">
+    <div className="relative  my-auto  hidden scale-[65%] items-center justify-center md:block lg:top-[-20px] TabletV:hidden">
       <img
-        className="mx-auto w-[87%] xl:w-[60%]"
-        src="/images/events/eventDesktop.png"
-        alt=""
+        className="mx-auto "
+        src="/images/events/platformDesktop.png"
+        alt="platform"
       />
-      {flowers.map(({ postion, colorFlower }, index) => (
-        <Flower className={postion} colorFlower={colorFlower} key={index} delay={index}/>
-      ))}
+      <GenerateFlower flowers={flowers} />
+      <GenerateDay days={days} />
     </div>
   );
 };
