@@ -23,7 +23,7 @@ const NavBrand = ({ isLogoVisible = false, ...props }: NavBrandProps) => {
       {...props}
     >
       {!isLogoVisible && (
-        <a href="https://www.sit.kmutt.ac.th/">
+        <a href="https://www.sit.kmutt.ac.th/" className="absolute top-0">
           <motion.button
             className="left-10 h-[4.5rem] w-56 origin-top-left rounded-b-3xl bg-white opacity-100 shadow-md hover:-translate-y-1 sm:rounded-b-xl md:left-5 md:h-16 md:w-44 md:rounded-b-2xl 2xl:scale-125"
             style={{
