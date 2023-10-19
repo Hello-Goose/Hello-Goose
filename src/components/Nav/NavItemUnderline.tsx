@@ -11,7 +11,7 @@ const NavItemUnderline = ({ active }: NavItemUnderlineProps) => {
       {active && <motion.img
         src="/images/nav/underline.png"
         alt="Underline"
-        className="absolute left-0 w-full transform translate-y-1/2 -bottom-10"
+        className="absolute left-0 w-[120px] transform translate-y-1/2 -bottom-10"
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         exit={{ opacity: 0 }}
