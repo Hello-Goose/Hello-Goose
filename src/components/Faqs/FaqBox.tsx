@@ -68,7 +68,7 @@ const FaqBox = () => {
         <div
           key={faq.id}
           className="mb-3 rounded-[25px] bg-white p-3 font-itim 
-        text-[1rem] text-black lg:py-4 lg:text-[1.3rem]"
+        text-[1rem] text-black lg:py-4 lg:text-[1.3rem] z-20"
         >
           <div
             className="flex items-center justify-between"
@@ -82,7 +82,7 @@ const FaqBox = () => {
 
           {faq.id === active && (
             <motion.div
-              className="m-2 border-t-2 p-2"
+              className="p-2 m-2 border-t-2"
               variants={faqVariants}
               initial="hidden"
               animate="visible"
