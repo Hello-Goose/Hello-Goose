@@ -31,12 +31,12 @@ const Team = forwardRef<HTMLDivElement, TeamProps>(
           alt=""
         />
         <img
-          className=" absolute top-0 w-screen bg-top"
+          className="absolute top-0 w-screen bg-top "
           src="/images/team/topTone.png"
           alt=""
         />
         <img
-          className="absolute bottom-0  w-screen"
+          className="absolute bottom-0 w-screen"
           src="/images/team/background.png"
           alt=""
         />
