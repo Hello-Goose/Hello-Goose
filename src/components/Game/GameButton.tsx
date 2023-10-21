@@ -39,7 +39,7 @@ const GameButton = () => {
     >
       <motion.img
         className="hover:drop-shadow-[0_0_50px_#fff]"
-        src="/images/game/เกม.png"
+        src="/images/game/game.png"
         alt="Game Link"
         variants={gameButton}
         initial="initial"
