@@ -58,7 +58,7 @@ export default {
       backgroundImage: {
         "background-hero": "url('/images/hero/herobanner-bg.png')",
         "goose-hero": "url('/images/hero/goose-element_0004_Layer-6.png')",
-        "background-about": "url('/images/about/Background.PNG')",
+        "background-about": "url('/images/about/about-bg.png')",
         "background-team": "url('/images/team/bgTone.png')",
         "background-event": "url('/images/events/bg.png')",
         "background-game": "url('/images/game/Bg Mobile นอน.png')",
