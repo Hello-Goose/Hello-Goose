@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { useScroll } from "framer-motion";
 import { useCallback, useEffect, useRef, useState } from "react";
 import About from "./components/About";
@@ -86,7 +87,7 @@ function App() {
   }, [setPage]);
 
   return (
-    <div className="flex flex-col items-center min-h-screen overflow-hidden">
+    <div className="flex min-h-screen flex-col items-center overflow-hidden">
       <NavBar isLogoVisible={isLogoVisible} navTo={navTo} />
       <HeroBanner ref={heroRef} />
       <About ref={aboutRef} />
@@ -95,6 +96,7 @@ function App() {
       <Faqs ref={faqRef} />
       <Game ref={gameRef} />
       <StickyLinks />
+      <Analytics />
     </div>
   );
 }
