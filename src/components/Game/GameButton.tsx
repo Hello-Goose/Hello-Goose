@@ -33,13 +33,10 @@ const GameButton = () => {
   };
 
   return (
-    <a
-      href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-      className="z-10 h-full w-[70%] cursor-pointer md:w-[50%] lg:w-[45%]"
-    >
+    <p className="z-10 h-full w-[70%] cursor-pointer md:w-[50%] lg:w-[45%]">
       <motion.img
         className="hover:drop-shadow-[0_0_50px_#fff]"
-        src="/images/game/game.png"
+        src="/images/game/game-comingsoon.png"
         alt="Game Link"
         variants={gameButton}
         initial="initial"
@@ -49,7 +46,7 @@ const GameButton = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.2 }}
       />
-    </a>
+    </p>
   );
 };
 
