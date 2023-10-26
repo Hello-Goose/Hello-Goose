@@ -10,7 +10,14 @@ const Team = forwardRef<HTMLDivElement, TeamProps>(
   ({ className, ...props }, ref) => {
     const [previewTeamType, setPreviewTeamType] = useState<
       TeamType | undefined
-    >(undefined);
+    >({
+      id: "front-end",
+      name: "Front-end",
+      description:
+        "อยากสร้างเว็บไซต์สวย ๆ ด้วยตัวเองไหม? หลักสูตรนี้พี่ ๆ จะพาน้อง ๆ ไปเรียนรู้เกี่ยวกับการออกแบบเว็บไซต์ โดยพี่ ๆ จะปูพื้นฐานตั้งแต่ HTML CSS JavaScript เพื่อต่อยอดไปสู่ Framework ยอดนิยมอย่าง React และ Version Control อย่าง Git เครื่องมือที่จะช่วยน้อง ๆ ทำงานร่วมกันได้อย่างราบรื่น ฟังดูน่าสนใจใช่ม๊า แล้วมาสนุกด้วยกันในโลกของ Front-End",
+      image: "/images/team/Front-end.png",
+      sit: "/images/team/Front-end-sit.png",
+    });
 
     const handlePreviewTeamType = (team: TeamType) => {
       setPreviewTeamType(team);
