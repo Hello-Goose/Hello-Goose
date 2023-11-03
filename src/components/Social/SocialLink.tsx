@@ -8,17 +8,7 @@ type SocialLinkProps = {
 
 const SocialLink = ({ href, icon, className, ...props }: SocialLinkProps) => {
   return (
-<<<<<<< Updated upstream
-    <button
-      className={twMerge(
-        "flex sm:h-[4rem] sm:w-[4rem] w-[3rem] h-[3rem] cursor-pointer items-center justify-center rounded-full bg-white text-black hover:bg-opacity-80 transition duration-300",
-        className,
-      )}
-      {...props}
-    >
-=======
     <>
->>>>>>> Stashed changes
       {href && (
         <a href={href} target="_blank" rel="noreferrer">
           <button
