@@ -47,7 +47,7 @@ const Team = forwardRef<HTMLDivElement, TeamProps>(
           src="/images/team/background.png"
           alt=""
         />
-        <div className="z-[99] p-4 sm:p-8">
+        <div className="z-10 p-4 sm:p-8">
           <TeamDetails team={previewTeamType} />
         </div>
         <div className="my-4 sm:my-8" />

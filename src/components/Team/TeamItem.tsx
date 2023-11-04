@@ -30,7 +30,7 @@ const TeamItem = ({ team, isPreview = false }: TeamItemProps) => {
         <img
           src={team.image}
           alt={team.name}
-          className="z-20 group-hover:translate-y-[-1.5rem] transition-all duration-500 absolute bottom-[20%] h-full w-full max-w-none transform drop-shadow-lg filter lg:max-w-[80rem]"
+          className="z-10 group-hover:translate-y-[-1.5rem] transition-all duration-500 absolute bottom-[20%] h-full w-full max-w-none transform drop-shadow-lg filter lg:max-w-[80rem]"
         />
         <h3 className="z-10 whitespace-nowrap text-[0.55rem] font-bold text-white sm:text-[1.7rem] lg:text-[2.15rem]">
           {team.name}

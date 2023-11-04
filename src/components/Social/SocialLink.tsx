@@ -10,7 +10,7 @@ const SocialLink = ({ href, icon, className, ...props }: SocialLinkProps) => {
   return (
     <>
       {href && (
-        <a href={href} target="_blank" rel="noreferrer" className="cursor-pointer">
+        <a href={href} target="_blank" rel="noreferrer" className="z-[999] cursor-pointer">
           <button
             className={twMerge(
               "flex h-[3rem] w-[3rem] items-center justify-center rounded-full bg-pink-300 text-white transition duration-300 hover:bg-opacity-80 sm:h-[4rem] sm:w-[4rem] cursor-pointer",
