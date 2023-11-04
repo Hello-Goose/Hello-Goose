@@ -1,4 +1,4 @@
-import { BsFacebook, BsInstagram } from "react-icons/bs";
+import { BsDiscord, BsInstagram } from "react-icons/bs";
 import SocialLink from "./SocialLink.tsx";
 
 const StickyLinks = () => {
@@ -11,8 +11,8 @@ const StickyLinks = () => {
             href="https://www.instagram.com/sithelloworld/"
           />
           <SocialLink
-            icon={<BsFacebook style={{ fontSize: "1.45rem" }} />}
-            href="https://www.facebook.com/SITHelloWorld"
+            icon={<BsDiscord style={{ fontSize: "1.45rem" }} />}
+            href="https://discord.gg/9Nh4etGASw"
           />
         </div>
       </div>
