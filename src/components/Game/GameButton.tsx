@@ -33,10 +33,10 @@ const GameButton = () => {
   };
 
   return (
-    <p className="z-10 h-full w-[70%] cursor-pointer md:w-[50%] lg:w-[45%]">
+    <a className="z-10 h-full w-[70%] cursor-pointer md:w-[50%] lg:w-[45%]" href="https://among-duck-hellogoose.vercel.app/" target="_blank">
       <motion.img
         className="hover:drop-shadow-[0_0_50px_#fff]"
-        src="/images/game/game-comingsoon.png"
+        src="/images/game/game.png"
         alt="Game Link"
         variants={gameButton}
         initial="initial"
@@ -46,7 +46,7 @@ const GameButton = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.2 }}
       />
-    </p>
+    </a>
   );
 };
 
