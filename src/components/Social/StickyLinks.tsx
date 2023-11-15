@@ -12,7 +12,7 @@ const StickyLinks = () => {
           />
           <SocialLink
             icon={<BsDiscord style={{ fontSize: "1.45rem" }} />}
-            href="https://discord.gg/9Nh4etGASw"
+            href="https://discord.gg/BjEPbd2Y"
           />
         </div>
       </div>
