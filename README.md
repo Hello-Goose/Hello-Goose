@@ -1,27 +1,59 @@
-# React + TypeScript + Vite
+<center><img src="https://img5.pic.in.th/file/secure-sv1/Logo-HelloWorld.png" alt="Logo" width="450" height="400"></center>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+<p align="center">
+  <a href="https://reactjs.org" title="Go to React homepage">
+    <img src="https://img.shields.io/badge/React-18-blue?logo=react&logoColor=white" alt="Made with React">
+  </a>
+  
+  <a href="https://yarnpkg.com" title="Go to Yarn homepage">
+    <img src="https://img.shields.io/badge/Yarn->=1.22-blue?logo=yarn&logoColor=white" alt="Made with Yarn">
+  </a>
+  <a href="https://nodejs.org" title="Go to Node.js homepage">
+    <img src="https://img.shields.io/badge/Node.js->=16-green?logo=node.js&logoColor=white" alt="Made with Node.js">
+  </a>
+  <a href="https://ubuntu.com/download/desktop" title="Go to Linux homepage">
+    <img src="https://img.shields.io/badge/Linux-Ubuntu22.04-orange?logo=linux&logoColor=white" alt="OS - Linux">
+  </a>
+  <a href="https://hub.docker.com/r/xsmity01/hellogoose_webpr" title="Go to Docker homepage">
+    <img src="https://img.shields.io/badge/Made_with-Docker-blue?logo=docker&logoColor=white" alt="Made with Docker">
+  </a>
+  <a href="http://10.4.56.30:3000/d/rYdddlPWkd/node-exporter-full-2?orgId=1&from=1698343684541&to=1698430084541&theme=dark" title="Go to Docker homepage">
+    <img src="https://img.shields.io/badge/Monitoring-green?logo=grafana&logoColor=white" alt="grafana">
+  </a>
+  <a href="https://github.com/Hello-Goose/Hello-Goose/actions/workflows/ci-testfile.yaml" title="AutoDeploy">
+    <img src="https://github.com/Hello-Goose/Hello-Goose/actions/workflows/ci-testfile.yaml/badge.svg?branch=main" alt="AutoDeploy">
+  </a>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# <center>Hello-Goose (WEB-PR) 🪿</center>
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+This website provides a minimal setup to get React working in Vite with Hot Module Replacement (HMR) and some ESLint rules , React + TypeScript + Vite Template.
+##<center> Contributors</center>
 
-- Configure the top-level `parserOptions` property like this:
+![GitHub Contributors Image](https://contrib.rocks/image?repo=Hello-Goose/Hello-Goose) 
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+A big thanks to the contributors who helped make this website better:
+
+
+
+1. [Sitthata](https://github.com/Sitthata)
+2. [realFK98](https://github.com/realFK98)
+3. [bestzige](https://github.com/bestzige)
+4. [Xsmitylnwza](https://github.com/Xsmitylnwza)
+5. [22p21s0045](https://github.com/22p21s0045)
+6. [SleepyLe0](https://github.com/SleepyLe0)
+7. [bisbat](https://github.com/bisbat)
+8. [GkG0139](https://github.com/GkG0139)
+   
+
+Feel free to check out their profiles
+### Running with yarn
+yarn install
+yarn dev
+
+
+
+
