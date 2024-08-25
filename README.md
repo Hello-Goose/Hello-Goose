@@ -40,7 +40,7 @@ A big thanks to the contributors who helped make this website better:
 
 
 1. [Sitthata](https://github.com/Sitthata)
-2. [realFK98](https://github.com/realFK98)
+2. [WMFK98](https://github.com/WMFK98)
 3. [bestzige](https://github.com/bestzige)
 4. [Xsmitylnwza](https://github.com/Xsmitylnwza)
 5. [22p21s0045](https://github.com/22p21s0045)
